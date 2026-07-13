@@ -1,0 +1,1 @@
+ RC.d  RC.obj:  RC.C SBY.h POWER.h ready.h Delay.h task.h Int.h REGISTER.h BUZZ.h Timer.h RC.h app.h

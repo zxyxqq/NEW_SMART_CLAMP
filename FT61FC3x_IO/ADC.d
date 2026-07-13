@@ -1,0 +1,1 @@
+ ADC.d  ADC.p1:  ADC.c POWER.h BUZZTT.h ready.h task.h Int.h LB.h stdint.h Timer.h adc.h delay.h app.h

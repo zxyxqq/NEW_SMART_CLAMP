@@ -1,0 +1,468 @@
+[p PRO_MODE GLOBOPT AUTOSTATIC RSC14 PICREGULAR PICMID SPACEOPT ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip FT61FC3X ]
+[d frameptr 6 ]
+"33 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\Main.c
+[e E1855 . `uc
+TASK0 0
+TASK1 1
+TASK2 2
+TASK3 3
+TASK_MAX 4
+]
+"53 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\READY.c
+[e E1957 . `uc
+ST_PRE_ON 0
+ST_OFF 1
+ST_FINAL_ON 2
+ST_DETECT 3
+]
+"93
+[e E1873 . `uc
+STATE_NORMAL 0
+STATE_UNDER_VOLTAGE 1
+STATE_OVER_VOLTAGE 2
+]
+"138 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\ADC.c
+[e E1946 . `uc
+STATE_NORMAL 0
+STATE_UNDER_VOLTAGE 1
+STATE_OVER_VOLTAGE 2
+]
+"5 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\Task.c
+[e E1951 . `uc
+TASK0 0
+TASK1 1
+TASK2 2
+TASK3 3
+TASK_MAX 4
+]
+"53 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\ADC.c
+[v _ADC_INITIAL ADC_INITIAL `(v  1 e 1 0 ]
+"86
+[v _GET_ADC_DATA GET_ADC_DATA `(ui  1 e 2 0 ]
+"115
+[v _Get_Vbattery_Data Get_Vbattery_Data `(v  1 e 1 0 ]
+"125
+[v _Get_Cbattery_Data Get_Cbattery_Data `(v  1 e 1 0 ]
+"137
+[v _Get_Vbattery_Stand_State Get_Vbattery_Stand_State `(E1873  1 e 1 0 ]
+"211
+[v _Relay_Release_Detect Relay_Release_Detect `(v  1 e 1 0 ]
+"234
+[v _ADC_Task ADC_Task `(v  1 e 1 0 ]
+"11 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\App.c
+[v _Initial Initial `(v  1 e 1 0 ]
+"21 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\BUZZTT.c
+[v _BUZZTT_Init BUZZTT_Init `(v  1 e 1 0 ]
+"34
+[v _KEY_Init KEY_Init `(v  1 e 1 0 ]
+"47
+[v _Hummer_Init Hummer_Init `(v  1 e 1 0 ]
+"60
+[v _BUZZHH_Control BUZZHH_Control `(v  1 e 1 0 ]
+"79
+[v _Key_Detect Key_Detect `(v  1 e 1 0 ]
+"131
+[v _Key_Task Key_Task `(v  1 e 1 0 ]
+"143
+[v _Hummer_Task Hummer_Task `(v  1 e 1 0 ]
+"155
+[v _BUZZTT_Task BUZZTT_Task `(v  1 e 1 0 ]
+"62 C:\Program Files (x86)\CCompiler\Compiler\data\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\CCompiler\Compiler\data\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\CCompiler\Compiler\data\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+[v i1___bmul __bmul `(uc  1 e 1 0 ]
+"8 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\Delay.c
+[v _DelayUs DelayUs `(v  1 e 1 0 ]
+"22
+[v _DelayMs DelayMs `(v  1 e 1 0 ]
+"16 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\INT.c
+[v _Int_Initial Int_Initial `(v  1 e 1 0 ]
+"31
+[v _Read_Int Read_Int `(v  1 e 1 0 ]
+"41
+[v _Int_Task Int_Task `(v  1 e 1 0 ]
+"27 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\LB.C
+[v _STNADBY_Control STNADBY_Control `(v  1 e 1 0 ]
+"41
+[v _LB_Control LB_Control `(v  1 e 1 0 ]
+"55
+[v _LB_STANDBY_Close_Control LB_STANDBY_Close_Control `(v  1 e 1 0 ]
+"70
+[v _Work_State_Change Work_State_Change `(v  1 e 1 0 ]
+"111
+[v _LB_ST_Task LB_ST_Task `(v  1 e 1 0 ]
+"24 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\Main.c
+[v _ISR ISR `II(v  1 e 1 0 ]
+"53
+[v _main main `(v  1 e 1 0 ]
+"9 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\Power.c
+[v _POWER_INITIAL POWER_INITIAL `(v  1 e 1 0 ]
+"42
+[v _SYS_Initial SYS_Initial `(v  1 e 1 0 ]
+"17 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\READY.c
+[v _Ready_Init Ready_Init `(v  1 e 1 0 ]
+"38
+[v _Ready_Control Ready_Control `(v  1 e 1 0 ]
+"52
+[v _READY_Task READY_Task `(v  1 e 1 0 ]
+"18 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\Task.c
+[v _Task_0 Task_0 `(v  1 e 1 0 ]
+"35
+[v _Task_1 Task_1 `(v  1 e 1 0 ]
+"49
+[v _Task_2 Task_2 `(v  1 e 1 0 ]
+"58
+[v _Task_3 Task_3 `(v  1 e 1 0 ]
+"70
+[v _Task_Process Task_Process `(v  1 e 1 0 ]
+"9 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\Timer.c
+[v _Timer0_Init Timer0_Init `(v  1 e 1 0 ]
+"20
+[v _Timer0_Task Timer0_Task `(v  1 e 1 0 ]
+[s S2540 . 14 `uc 1 Standby_Work_State 1 0 `uc 1 LB_Value 1 1 `uc 1 INT_Value 1 2 `uc 1 Relay_Release 1 3 `uc 1 KEY_Value 1 4 `uc 1 Vadc_Value 1 5 `uc 1 Cadc_Value 1 6 `uc 1 READY_Value 1 7 `uc 1 STANDBY_Value 1 8 `ui 1 Vbattery_Adc 2 9 `ui 1 Cbattery_Adc 2 11 `uc 1 Long_Time_Change 1 13 ]
+"3 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\App.c
+[v _SYS SYS `S2540  1 e 14 0 ]
+"71 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\BUZZTT.c
+[v _KEY_Press KEY_Press `uc  1 s 1 KEY_Press ]
+"14 C:\Program Files (x86)\CCompiler\Compiler\data\include\FT61FC3X.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"78
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"90
+[v _PA1 PA1 `VEb  1 e 0 @41 ]
+"129
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"143
+[v _PB3 PB3 `VEb  1 e 0 @51 ]
+"145
+[v _PB5 PB5 `VEb  1 e 0 @53 ]
+"179
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"185
+[v _PC1 PC1 `VEb  1 e 0 @57 ]
+"247
+[v _INTCON INTCON `VEuc  1 e 1 @11 ]
+"251
+[v _T0IF T0IF `VEb  1 e 0 @90 ]
+"254
+[v _T0IE T0IE `VEb  1 e 0 @93 ]
+"256
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"568
+[v _OPTION OPTION `VEuc  1 e 1 @129 ]
+"597
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"626
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"655
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"676
+[v _WPDA WPDA `VEuc  1 e 1 @137 ]
+"728
+[v _WPDC WPDC `VEuc  1 e 1 @141 ]
+"774
+[v _OSCCON OSCCON `VEuc  1 e 1 @143 ]
+"838
+[v _WPUC WPUC `VEuc  1 e 1 @147 ]
+"876
+[v _WPUA WPUA `VEuc  1 e 1 @149 ]
+"1146
+[v _WPUB WPUB `VEuc  1 e 1 @269 ]
+"1175
+[v _WPDB WPDB `VEuc  1 e 1 @270 ]
+"1250
+[v _ADRESL ADRESL `VEuc  1 e 1 @273 ]
+"1255
+[v _ADRESH ADRESH `VEuc  1 e 1 @274 ]
+"1259
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @275 ]
+"1261
+[v _ADON ADON `VEb  1 e 0 @2200 ]
+"1287
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @276 ]
+"1318
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @277 ]
+"1419
+[v _ANSEL0 ANSEL0 `VEuc  1 e 1 @286 ]
+"1456
+[v _ADCON3 ADCON3 `VEuc  1 e 1 @390 ]
+"1476
+[v _ADCMPH ADCMPH `VEuc  1 e 1 @391 ]
+[s S701 . 6 `uc 1 Run 1 0 `ui 1 Timer 2 1 `ui 1 IvtTime 2 3 `*.27(v 1 TaskHook 1 5 ]
+"5 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\Task.c
+[v _TaskCompany TaskCompany `[4]S701  1 e 24 0 ]
+"53 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\Main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"60
+} 0
+"70 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\Task.c
+[v _Task_Process Task_Process `(v  1 e 1 0 ]
+{
+"72
+[v Task_Process@i i `uc  1 a 1 7 ]
+"81
+} 0
+"4 C:\Program Files (x86)\CCompiler\Compiler\data\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 1 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 2 ]
+"51
+} 0
+"49 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\Task.c
+[v _Task_2 Task_2 `(v  1 e 1 0 ]
+{
+"52
+} 0
+"35
+[v _Task_1 Task_1 `(v  1 e 1 0 ]
+{
+"42
+} 0
+"18
+[v _Task_0 Task_0 `(v  1 e 1 0 ]
+{
+"27
+} 0
+"58
+[v _Task_3 Task_3 `(v  1 e 1 0 ]
+{
+"62
+} 0
+"20 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\Timer.c
+[v _Timer0_Task Timer0_Task `(v  1 e 1 0 ]
+{
+"22
+[v Timer0_Task@Long_Ready_Time Long_Ready_Time `ui  1 s 2 Long_Ready_Time ]
+"41
+} 0
+"155 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\BUZZTT.c
+[v _BUZZTT_Task BUZZTT_Task `(v  1 e 1 0 ]
+{
+"158
+} 0
+"60
+[v _BUZZHH_Control BUZZHH_Control `(v  1 e 1 0 ]
+{
+"70
+} 0
+"131
+[v _Key_Task Key_Task `(v  1 e 1 0 ]
+{
+"135
+} 0
+"79
+[v _Key_Detect Key_Detect `(v  1 e 1 0 ]
+{
+"81
+[v Key_Detect@press_cnt press_cnt `uc  1 s 1 press_cnt ]
+"82
+[v Key_Detect@long_cnt long_cnt `ui  1 s 2 long_cnt ]
+"83
+[v Key_Detect@long_trig long_trig `uc  1 s 1 long_trig ]
+"123
+} 0
+"34
+[v _KEY_Init KEY_Init `(v  1 e 1 0 ]
+{
+"40
+} 0
+"143
+[v _Hummer_Task Hummer_Task `(v  1 e 1 0 ]
+{
+"147
+} 0
+"47
+[v _Hummer_Init Hummer_Init `(v  1 e 1 0 ]
+{
+"53
+} 0
+"52 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\READY.c
+[v _READY_Task READY_Task `(v  1 e 1 0 ]
+{
+"53
+[v READY_Task@state state `E1957  1 s 1 state ]
+"54
+[v READY_Task@counter counter `ui  1 s 2 counter ]
+"98
+} 0
+"38
+[v _Ready_Control Ready_Control `(v  1 e 1 0 ]
+{
+[v Ready_Control@num num `uc  1 a 1 wreg ]
+[v Ready_Control@num num `uc  1 a 1 wreg ]
+"40
+[v Ready_Control@num num `uc  1 a 1 0 ]
+"41
+} 0
+"111 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\LB.C
+[v _LB_ST_Task LB_ST_Task `(v  1 e 1 0 ]
+{
+"117
+} 0
+"70
+[v _Work_State_Change Work_State_Change `(v  1 e 1 0 ]
+{
+"109
+} 0
+"27
+[v _STNADBY_Control STNADBY_Control `(v  1 e 1 0 ]
+{
+"34
+} 0
+"55
+[v _LB_STANDBY_Close_Control LB_STANDBY_Close_Control `(v  1 e 1 0 ]
+{
+"62
+} 0
+"41
+[v _LB_Control LB_Control `(v  1 e 1 0 ]
+{
+"48
+} 0
+"41 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\INT.c
+[v _Int_Task Int_Task `(v  1 e 1 0 ]
+{
+"44
+} 0
+"31
+[v _Read_Int Read_Int `(v  1 e 1 0 ]
+{
+"34
+} 0
+"234 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\ADC.c
+[v _ADC_Task ADC_Task `(v  1 e 1 0 ]
+{
+"259
+} 0
+"211
+[v _Relay_Release_Detect Relay_Release_Detect `(v  1 e 1 0 ]
+{
+"226
+} 0
+"137
+[v _Get_Vbattery_Stand_State Get_Vbattery_Stand_State `(E1873  1 e 1 0 ]
+{
+[v Get_Vbattery_Stand_State@adc_value adc_value `ui  1 p 2 0 ]
+"139
+[v Get_Vbattery_Stand_State@current_state current_state `E1946  1 s 1 current_state ]
+"173
+} 0
+"115
+[v _Get_Vbattery_Data Get_Vbattery_Data `(v  1 e 1 0 ]
+{
+"118
+} 0
+"125
+[v _Get_Cbattery_Data Get_Cbattery_Data `(v  1 e 1 0 ]
+{
+"128
+} 0
+"86
+[v _GET_ADC_DATA GET_ADC_DATA `(ui  1 e 2 0 ]
+{
+[v GET_ADC_DATA@adcChannel adcChannel `uc  1 a 1 wreg ]
+"88
+[v GET_ADC_DATA@ADCON0Buff ADCON0Buff `uc  1 a 1 6 ]
+"86
+[v GET_ADC_DATA@adcChannel adcChannel `uc  1 a 1 wreg ]
+"89
+[v GET_ADC_DATA@adcChannel adcChannel `uc  1 a 1 5 ]
+"107
+} 0
+"11 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\App.c
+[v _Initial Initial `(v  1 e 1 0 ]
+{
+"26
+} 0
+"9 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\Timer.c
+[v _Timer0_Init Timer0_Init `(v  1 e 1 0 ]
+{
+"14
+} 0
+"42 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\Power.c
+[v _SYS_Initial SYS_Initial `(v  1 e 1 0 ]
+{
+"69
+} 0
+"17 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\READY.c
+[v _Ready_Init Ready_Init `(v  1 e 1 0 ]
+{
+"30
+} 0
+"9 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\Power.c
+[v _POWER_INITIAL POWER_INITIAL `(v  1 e 1 0 ]
+{
+"35
+} 0
+"16 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\INT.c
+[v _Int_Initial Int_Initial `(v  1 e 1 0 ]
+{
+"19
+} 0
+"21 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\BUZZTT.c
+[v _BUZZTT_Init BUZZTT_Init `(v  1 e 1 0 ]
+{
+"27
+} 0
+"53 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\ADC.c
+[v _ADC_INITIAL ADC_INITIAL `(v  1 e 1 0 ]
+{
+"78
+} 0
+"22 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\Delay.c
+[v _DelayMs DelayMs `(v  1 e 1 0 ]
+{
+[v DelayMs@Time Time `uc  1 a 1 wreg ]
+"24
+[v DelayMs@b b `uc  1 a 1 4 ]
+[v DelayMs@a a `uc  1 a 1 3 ]
+"22
+[v DelayMs@Time Time `uc  1 a 1 wreg ]
+"25
+[v DelayMs@Time Time `uc  1 a 1 2 ]
+"32
+} 0
+"8
+[v _DelayUs DelayUs `(v  1 e 1 0 ]
+{
+[v DelayUs@Time Time `uc  1 a 1 wreg ]
+"10
+[v DelayUs@a a `uc  1 a 1 1 ]
+"8
+[v DelayUs@Time Time `uc  1 a 1 wreg ]
+"11
+[v DelayUs@Time Time `uc  1 a 1 0 ]
+"15
+} 0
+"24 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码\FT61FC3x_IO\Main.c
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"32
+[v ISR@i i `uc  1 a 1 8 ]
+"46
+} 0
+"4 C:\Program Files (x86)\CCompiler\Compiler\data\sources\common\Umul8.c
+[v i1___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v i1___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v i1___bmul@product __bmul `uc  1 a 1 2 ]
+[v i1___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v i1___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v i1___bmul@multiplier multiplier `uc  1 a 1 1 ]
+"51
+} 0

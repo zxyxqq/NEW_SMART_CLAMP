@@ -1,0 +1,1 @@
+ Main.d  Main.obj:  Main.C SBY.h POWER.h ready.h Delay.h task.h Int.h REGISTER.h BUZZ.h Main.h Timer.h RC.h app.h

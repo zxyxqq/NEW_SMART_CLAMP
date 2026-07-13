@@ -1,0 +1,1 @@
+ INT.d  INT.obj:  INT.C SBY.h POWER.h ready.h Delay.h task.h Int.h int.h REGISTER.h BUZZ.h Timer.h RC.h app.h

@@ -1,0 +1,1 @@
+ APP.d  APP.obj:  APP.C APP.h SBY.h POWER.h ready.h Delay.h task.h Int.h REGISTER.h BUZZ.h Timer.h RC.h app.h

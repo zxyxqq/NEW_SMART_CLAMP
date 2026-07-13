@@ -1,0 +1,498 @@
+[p PRO_MODE GLOBOPT AUTOSTATIC RSC14 PICREGULAR PICMID SPACEOPT ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip FT60FC2X ]
+[d frameptr 6 ]
+"23 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\INT.C
+[e E1308 . `uc
+RC_ST_led_Close 0
+RC_led_Open 1
+STANDBY_led_Open 2
+]
+[e E1313 . `uc
+High_Register 0
+Low_Register 1
+]
+"21 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\RC.C
+[e E1308 . `uc
+RC_ST_led_Close 0
+RC_led_Open 1
+STANDBY_led_Open 2
+]
+[e E1313 . `uc
+High_Register 0
+Low_Register 1
+]
+"53 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\READY.C
+[e E1324 . `uc
+ST_PRE_ON 0
+ST_OFF 1
+ST_FINAL_ON 2
+ST_DETECT 3
+]
+"56
+[e E1302 . `uc
+RC_ST_led_Close 0
+RC_led_Open 1
+STANDBY_led_Open 2
+]
+[e E1307 . `uc
+High_Register 0
+Low_Register 1
+]
+"36 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\BUZZ.C
+[e E1300 . `uc
+RC_ST_led_Close 0
+RC_led_Open 1
+STANDBY_led_Open 2
+]
+[e E1305 . `uc
+High_Register 0
+Low_Register 1
+]
+"3 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\APP.C
+[e E1314 . `uc
+RC_ST_led_Close 0
+RC_led_Open 1
+STANDBY_led_Open 2
+]
+[e E1319 . `uc
+High_Register 0
+Low_Register 1
+]
+"5 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\TASK.C
+[e E1318 . `uc
+TASK0 0
+TASK1 1
+TASK2 2
+TASK3 3
+TASK_MAX 4
+]
+"4 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\SBY.C
+[e E1300 . `uc
+RC_ST_led_Close 0
+RC_led_Open 1
+STANDBY_led_Open 2
+]
+"69
+[e E1305 . `uc
+High_Register 0
+Low_Register 1
+]
+"24 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\Timer.C
+[e E1310 . `uc
+RC_ST_led_Close 0
+RC_led_Open 1
+STANDBY_led_Open 2
+]
+[e E1315 . `uc
+High_Register 0
+Low_Register 1
+]
+"33 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\Main.C
+[e E1226 . `uc
+TASK0 0
+TASK1 1
+TASK2 2
+TASK3 3
+TASK_MAX 4
+]
+"9 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\REGISTER.C
+[e E1307 . `uc
+High_Register 0
+Low_Register 1
+]
+"57
+[e E1302 . `uc
+RC_ST_led_Close 0
+RC_led_Open 1
+STANDBY_led_Open 2
+]
+"11 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\APP.C
+[v _Initial Initial `(v  1 e 1 0 ]
+"10 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\BUZZ.C
+[v _KEY_Init KEY_Init `(v  1 e 1 0 ]
+"23
+[v _Hummer_Init Hummer_Init `(v  1 e 1 0 ]
+"34
+[v _BUZZHH_Control BUZZHH_Control `(v  1 e 1 0 ]
+"52
+[v _Key_Detect Key_Detect `(v  1 e 1 0 ]
+"118
+[v _Hummer_Task Hummer_Task `(v  1 e 1 0 ]
+"130
+[v _BUZZTT_Task BUZZTT_Task `(v  1 e 1 0 ]
+"62 C:\Program Files (x86)\CCompiler\Compiler\data\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\CCompiler\Compiler\data\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"4 C:\Program Files (x86)\CCompiler\Compiler\data\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+[v i1___bmul __bmul `(uc  1 e 1 0 ]
+"8 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\Delay.C
+[v _DelayUs DelayUs `(v  1 e 1 0 ]
+"22
+[v _DelayMs DelayMs `(v  1 e 1 0 ]
+"11 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\INT.C
+[v _INT_Init INT_Init `(v  1 e 1 0 ]
+"21
+[v _INT_Read INT_Read `(v  1 e 1 0 ]
+"31
+[v _INT_Task INT_Task `(v  1 e 1 0 ]
+"24 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\Main.C
+[v _ISR ISR `II(v  1 e 1 0 ]
+"53
+[v _main main `(v  1 e 1 0 ]
+"10 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\POWER.C
+[v _POWER_INITIAL POWER_INITIAL `(v  1 e 1 0 ]
+"9 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\RC.C
+[v _RC_Init RC_Init `(v  1 e 1 0 ]
+"19
+[v _RC_Read RC_Read `(v  1 e 1 0 ]
+"29
+[v _RC_Task RC_Task `(v  1 e 1 0 ]
+"11 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\READY.C
+[v _Ready_Init Ready_Init `(v  1 e 1 0 ]
+"28
+[v _Ready_Control Ready_Control `(v  1 e 1 0 ]
+"51
+[v _READY_Task READY_Task `(v  1 e 1 0 ]
+"17 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\REGISTER.C
+[v _REGISTER_Init REGISTER_Init `(v  1 e 1 0 ]
+"33
+[v _Regiser_High Regiser_High `(v  1 e 1 0 ]
+"44
+[v _Regiser_Low Regiser_Low `(v  1 e 1 0 ]
+"55
+[v _REGISTER_Detect REGISTER_Detect `(v  1 e 1 0 ]
+"73
+[v _REGISTER_Control REGISTER_Control `(v  1 e 1 0 ]
+"94
+[v _REGISTER_Task REGISTER_Task `(v  1 e 1 0 ]
+"13 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\SBY.C
+[v _SBY_Init SBY_Init `(v  1 e 1 0 ]
+"31
+[v _RC_Open RC_Open `(v  1 e 1 0 ]
+"45
+[v _STANDBY_Open STANDBY_Open `(v  1 e 1 0 ]
+"57
+[v _RC_STANDBY_Close RC_STANDBY_Close `(v  1 e 1 0 ]
+"67
+[v _SBY_Detect SBY_Detect `(v  1 e 1 0 ]
+"89
+[v _SBY_Control SBY_Control `(v  1 e 1 0 ]
+"125
+[v _SBY_Task SBY_Task `(v  1 e 1 0 ]
+"18 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\TASK.C
+[v _Task_0 Task_0 `(v  1 e 1 0 ]
+"35
+[v _Task_1 Task_1 `(v  1 e 1 0 ]
+"45
+[v _Task_2 Task_2 `(v  1 e 1 0 ]
+"54
+[v _Task_3 Task_3 `(v  1 e 1 0 ]
+"65
+[v _Task_Process Task_Process `(v  1 e 1 0 ]
+"20 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\Timer.C
+[v _Timer0_Task Timer0_Task `(v  1 e 1 0 ]
+[s S402 . 10 `uc 1 Standby_Work_State 1 0 `uc 1 RC_Value 1 1 `uc 1 INT_Value 1 2 `uc 1 Ready_Value 1 3 `uc 1 STANDBY_Value 1 4 `uc 1 Long_Time_Change 1 5 `uc 1 Key_Press_Value 1 6 `uc 1 KEY_Value 1 7 `E1308 1 SBY_Value 1 8 `E1313 1 RES_Change 1 9 ]
+"3 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\APP.C
+[v _SYS SYS `S402  1 e 10 0 ]
+"14 C:\Program Files (x86)\CCompiler\Compiler\data\include\FT60FC2X.h
+[v _TMR0 TMR0 `VEuc  1 e 1 @1 ]
+"63
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"76
+[v _PA2 PA2 `VEb  1 e 0 @42 ]
+"78
+[v _PA4 PA4 `VEb  1 e 0 @44 ]
+"79
+[v _PA5 PA5 `VEb  1 e 0 @45 ]
+"108
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"157
+[v _INTCON INTCON `VEuc  1 e 1 @11 ]
+"161
+[v _T0IF T0IF `VEb  1 e 0 @90 ]
+"164
+[v _T0IE T0IE `VEb  1 e 0 @93 ]
+"166
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"421
+[v _MSCON MSCON `VEuc  1 e 1 @27 ]
+"502
+[v _OPTION OPTION `VEuc  1 e 1 @129 ]
+"531
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"561
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"586
+[v _PSRCA PSRCA `VEuc  1 e 1 @136 ]
+"668
+[v _OSCCON OSCCON `VEuc  1 e 1 @143 ]
+"731
+[v _WPUC WPUC `VEuc  1 e 1 @147 ]
+"755
+[v _PSRCC PSRCC `VEuc  1 e 1 @148 ]
+"779
+[v _WPUA WPUA `VEuc  1 e 1 @149 ]
+"843
+[v _PSINKA PSINKA `VEuc  1 e 1 @151 ]
+"932
+[v _PSINKC PSINKC `VEuc  1 e 1 @159 ]
+"3 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\READY.C
+[v _current_output current_output `uc  1 s 1 current_output ]
+"9 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\REGISTER.C
+[v _last_state last_state `E1307  1 s 1 last_state ]
+"4 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\SBY.C
+[v _current_output_state current_output_state `E1300  1 s 1 current_output_state ]
+[s S4701 . 6 `uc 1 Run 1 0 `ui 1 Timer 2 1 `ui 1 IvtTime 2 3 `*.27(v 1 TaskHook 1 5 ]
+"5 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\TASK.C
+[v _TaskCompany TaskCompany `[4]S4701  1 e 24 0 ]
+"53 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\Main.C
+[v _main main `(v  1 e 1 0 ]
+{
+"60
+} 0
+"65 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\TASK.C
+[v _Task_Process Task_Process `(v  1 e 1 0 ]
+{
+"67
+[v Task_Process@i i `uc  1 a 1 3 ]
+"76
+} 0
+"4 C:\Program Files (x86)\CCompiler\Compiler\data\sources\common\Umul8.c
+[v ___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+"6
+[v ___bmul@product product `uc  1 a 1 1 ]
+"4
+[v ___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v ___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v ___bmul@multiplier multiplier `uc  1 a 1 2 ]
+"51
+} 0
+"45 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\TASK.C
+[v _Task_2 Task_2 `(v  1 e 1 0 ]
+{
+"48
+} 0
+"35
+[v _Task_1 Task_1 `(v  1 e 1 0 ]
+{
+"38
+} 0
+"18
+[v _Task_0 Task_0 `(v  1 e 1 0 ]
+{
+"27
+} 0
+"54
+[v _Task_3 Task_3 `(v  1 e 1 0 ]
+{
+"57
+} 0
+"20 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\Timer.C
+[v _Timer0_Task Timer0_Task `(v  1 e 1 0 ]
+{
+"22
+[v Timer0_Task@Long_Ready_Time Long_Ready_Time `ui  1 s 2 Long_Ready_Time ]
+"41
+} 0
+"125 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\SBY.C
+[v _SBY_Task SBY_Task `(v  1 e 1 0 ]
+{
+"129
+} 0
+"67
+[v _SBY_Detect SBY_Detect `(v  1 e 1 0 ]
+{
+"82
+} 0
+"89
+[v _SBY_Control SBY_Control `(v  1 e 1 0 ]
+{
+"91
+[v SBY_Control@target target `E1300  1 a 1 0 ]
+"116
+} 0
+"45
+[v _STANDBY_Open STANDBY_Open `(v  1 e 1 0 ]
+{
+"49
+} 0
+"57
+[v _RC_STANDBY_Close RC_STANDBY_Close `(v  1 e 1 0 ]
+{
+"60
+} 0
+"31
+[v _RC_Open RC_Open `(v  1 e 1 0 ]
+{
+"37
+} 0
+"94 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\REGISTER.C
+[v _REGISTER_Task REGISTER_Task `(v  1 e 1 0 ]
+{
+"98
+} 0
+"55
+[v _REGISTER_Detect REGISTER_Detect `(v  1 e 1 0 ]
+{
+"65
+} 0
+"73
+[v _REGISTER_Control REGISTER_Control `(v  1 e 1 0 ]
+{
+"75
+[v REGISTER_Control@target target `E1307  1 a 1 0 ]
+"87
+} 0
+"44
+[v _Regiser_Low Regiser_Low `(v  1 e 1 0 ]
+{
+"48
+} 0
+"33
+[v _Regiser_High Regiser_High `(v  1 e 1 0 ]
+{
+"36
+} 0
+"51 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\READY.C
+[v _READY_Task READY_Task `(v  1 e 1 0 ]
+{
+"53
+[v READY_Task@state state `E1324  1 s 1 state ]
+"54
+[v READY_Task@counter counter `ui  1 s 2 counter ]
+"104
+} 0
+"28
+[v _Ready_Control Ready_Control `(v  1 e 1 0 ]
+{
+[v Ready_Control@on on `uc  1 a 1 wreg ]
+[v Ready_Control@on on `uc  1 a 1 wreg ]
+"30
+[v Ready_Control@on on `uc  1 a 1 0 ]
+"42
+} 0
+"29 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\RC.C
+[v _RC_Task RC_Task `(v  1 e 1 0 ]
+{
+"32
+} 0
+"19
+[v _RC_Read RC_Read `(v  1 e 1 0 ]
+{
+"22
+} 0
+"31 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\INT.C
+[v _INT_Task INT_Task `(v  1 e 1 0 ]
+{
+"34
+} 0
+"21
+[v _INT_Read INT_Read `(v  1 e 1 0 ]
+{
+"24
+} 0
+"130 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\BUZZ.C
+[v _BUZZTT_Task BUZZTT_Task `(v  1 e 1 0 ]
+{
+"133
+} 0
+"34
+[v _BUZZHH_Control BUZZHH_Control `(v  1 e 1 0 ]
+{
+"44
+} 0
+"118
+[v _Hummer_Task Hummer_Task `(v  1 e 1 0 ]
+{
+"122
+} 0
+"23
+[v _Hummer_Init Hummer_Init `(v  1 e 1 0 ]
+{
+"26
+} 0
+"11 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\APP.C
+[v _Initial Initial `(v  1 e 1 0 ]
+{
+"25
+} 0
+"13 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\SBY.C
+[v _SBY_Init SBY_Init `(v  1 e 1 0 ]
+{
+"23
+} 0
+"11 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\READY.C
+[v _Ready_Init Ready_Init `(v  1 e 1 0 ]
+{
+"20
+} 0
+"17 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\REGISTER.C
+[v _REGISTER_Init REGISTER_Init `(v  1 e 1 0 ]
+{
+"25
+} 0
+"9 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\RC.C
+[v _RC_Init RC_Init `(v  1 e 1 0 ]
+{
+"12
+} 0
+"10 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\POWER.C
+[v _POWER_INITIAL POWER_INITIAL `(v  1 e 1 0 ]
+{
+"39
+} 0
+"11 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\INT.C
+[v _INT_Init INT_Init `(v  1 e 1 0 ]
+{
+"14
+} 0
+"22 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\Delay.C
+[v _DelayMs DelayMs `(v  1 e 1 0 ]
+{
+[v DelayMs@Time Time `uc  1 a 1 wreg ]
+"24
+[v DelayMs@b b `uc  1 a 1 4 ]
+[v DelayMs@a a `uc  1 a 1 3 ]
+"22
+[v DelayMs@Time Time `uc  1 a 1 wreg ]
+"25
+[v DelayMs@Time Time `uc  1 a 1 2 ]
+"32
+} 0
+"8
+[v _DelayUs DelayUs `(v  1 e 1 0 ]
+{
+[v DelayUs@Time Time `uc  1 a 1 wreg ]
+"10
+[v DelayUs@a a `uc  1 a 1 1 ]
+"8
+[v DelayUs@Time Time `uc  1 a 1 wreg ]
+"11
+[v DelayUs@Time Time `uc  1 a 1 0 ]
+"15
+} 0
+"24 E:\Users\gcsja805\Desktop\智能夹子\智能夹代码(FT60FC2X)\FT60FC2x_IO\Main.C
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"32
+[v ISR@i i `uc  1 a 1 8 ]
+"46
+} 0
+"4 C:\Program Files (x86)\CCompiler\Compiler\data\sources\common\Umul8.c
+[v i1___bmul __bmul `(uc  1 e 1 0 ]
+{
+[v i1___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v i1___bmul@product __bmul `uc  1 a 1 2 ]
+[v i1___bmul@multiplier multiplier `uc  1 a 1 wreg ]
+[v i1___bmul@multiplicand multiplicand `uc  1 p 1 0 ]
+"6
+[v i1___bmul@multiplier multiplier `uc  1 a 1 1 ]
+"51
+} 0

@@ -1,0 +1,1 @@
+ TASK.d  TASK.obj:  TASK.C SBY.h POWER.h ready.h Delay.h task.h Int.h REGISTER.h BUZZ.h Task.h Timer.h RC.h app.h

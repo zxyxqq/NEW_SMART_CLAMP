@@ -1,0 +1,1 @@
+ POWER.d  POWER.obj:  POWER.C POWER.h
