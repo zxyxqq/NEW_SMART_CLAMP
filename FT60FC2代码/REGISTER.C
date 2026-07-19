@@ -93,6 +93,8 @@ void REGISTER_Control(void)
  --------------------------------------------------*/	
 void REGISTER_Task(void)
 {
-	REGISTER_Detect();
+//	REGISTER_Detect();
+//	SYS.RES_Change = Low_Register;
+	SYS.RES_Change = High_Register;
 	REGISTER_Control();
 }

@@ -254,7 +254,7 @@ Version 3.2   GCC8 Compiled Intermediate Code
 "941
 [u S84 `S85 1 ]
 [n S84 . . ]
-"21 RC.C
+"25 RC.C
 [c E1308 0 1 2 .. ]
 [n E1308 . RC_ST_led_Close RC_led_Open STANDBY_led_Open  ]
 [c E1313 0 1 .. ]
@@ -1948,9 +1948,9 @@ Version 3.2   GCC8 Compiled Intermediate Code
 [; ;ready.h: 31: void Ready_Init(void);
 [; ;ready.h: 32: void Ready_Control(uint8_t on);
 [; ;ready.h: 33: void READY_Task(void);
-[; ;Int.h: 8: void INT_Init(void);
-[; ;Int.h: 9: void INT_Read(void);
-[; ;Int.h: 10: void INT_Task(void);
+[; ;Int.h: 16: void INT_Init(void);
+[; ;Int.h: 17: void INT_Read(void);
+[; ;Int.h: 18: void INT_Task(void);
 [; ;BUZZ.h: 11: void KEY_Init(void);
 [; ;BUZZ.h: 12: void Hummer_Init(void);
 [; ;BUZZ.h: 13: void BUZZHH_Control(void);
@@ -1994,51 +1994,51 @@ Version 3.2   GCC8 Compiled Intermediate Code
 [; ;app.h: 55: Register_State RES_Change;
 [; ;app.h: 56: }sys;
 [; ;app.h: 58: extern sys SYS;
-[; ;RC.h: 7: void RC_Init(void);
-[; ;RC.h: 8: void RC_Read(void);
-[; ;RC.h: 9: void RC_Task(void);
-"9 RC.C
+[; ;RC.h: 12: void RC_Init(void);
+[; ;RC.h: 13: void RC_Read(void);
+[; ;RC.h: 14: void RC_Task(void);
+"11 RC.C
 [v _RC_Init `(v ~T0 @X0 1 ef ]
-"10
+"12
 {
-[; ;RC.C: 9: void RC_Init(void)
-[; ;RC.C: 10: {
+[; ;RC.C: 11: void RC_Init(void)
+[; ;RC.C: 12: {
 [e :U _RC_Init ]
 [f ]
-[; ;RC.C: 11: TRISA |= 0B00100000;
-"11
-[e =| _TRISA -> -> 32 `i `uc ]
-[; ;RC.C: 12: }
-"12
+[; ;RC.C: 13: TRISA |= (1 << 5);
+"13
+[e =| _TRISA -> << -> 1 `i -> 5 `i `uc ]
+[; ;RC.C: 14: }
+"14
 [e :UE 89 ]
 }
-"19
+"21
 [v _RC_Read `(v ~T0 @X0 1 ef ]
-"20
+"22
 {
-[; ;RC.C: 19: void RC_Read(void)
-[; ;RC.C: 20: {
+[; ;RC.C: 21: void RC_Read(void)
+[; ;RC.C: 22: {
 [e :U _RC_Read ]
 [f ]
-[; ;RC.C: 21: SYS.RC_Value = PA5;
-"21
-[e = . _SYS 1 -> -> _PA5 `i `uc ]
-[; ;RC.C: 22: }
-"22
+[; ;RC.C: 25: SYS.RC_Value = (1 << 5);
+"25
+[e = . _SYS 1 -> << -> 1 `i -> 5 `i `uc ]
+[; ;RC.C: 26: }
+"26
 [e :UE 90 ]
 }
-"29
+"33
 [v _RC_Task `(v ~T0 @X0 1 ef ]
-"30
+"34
 {
-[; ;RC.C: 29: void RC_Task(void)
-[; ;RC.C: 30: {
+[; ;RC.C: 33: void RC_Task(void)
+[; ;RC.C: 34: {
 [e :U _RC_Task ]
 [f ]
-[; ;RC.C: 31: RC_Read();
-"31
+[; ;RC.C: 35: RC_Read();
+"35
 [e ( _RC_Read ..  ]
-[; ;RC.C: 32: }
-"32
+[; ;RC.C: 36: }
+"36
 [e :UE 91 ]
 }

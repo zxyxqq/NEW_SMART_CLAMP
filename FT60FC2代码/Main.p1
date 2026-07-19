@@ -266,6 +266,8 @@ Version 3.2   GCC8 Compiled Intermediate Code
 [p mainexit ]
 "17 app.h
 [v _Initial `(v ~T0 @X0 0 ef ]
+"17 BUZZ.h
+[v _Key_Task `(v ~T0 @X0 0 ef ]
 "36 task.h
 [v _Task_Process `(v ~T0 @X0 0 ef ]
 [; ;fmd.h: 26: extern const char __xc8_OPTIM_SPEED;
@@ -1952,12 +1954,12 @@ Version 3.2   GCC8 Compiled Intermediate Code
 [; ;ready.h: 31: void Ready_Init(void);
 [; ;ready.h: 32: void Ready_Control(uint8_t on);
 [; ;ready.h: 33: void READY_Task(void);
-[; ;Int.h: 8: void INT_Init(void);
-[; ;Int.h: 9: void INT_Read(void);
-[; ;Int.h: 10: void INT_Task(void);
-[; ;RC.h: 7: void RC_Init(void);
-[; ;RC.h: 8: void RC_Read(void);
-[; ;RC.h: 9: void RC_Task(void);
+[; ;Int.h: 16: void INT_Init(void);
+[; ;Int.h: 17: void INT_Read(void);
+[; ;Int.h: 18: void INT_Task(void);
+[; ;RC.h: 12: void RC_Init(void);
+[; ;RC.h: 13: void RC_Read(void);
+[; ;RC.h: 14: void RC_Task(void);
 [; ;BUZZ.h: 11: void KEY_Init(void);
 [; ;BUZZ.h: 12: void Hummer_Init(void);
 [; ;BUZZ.h: 13: void BUZZHH_Control(void);
@@ -2094,23 +2096,30 @@ Version 3.2   GCC8 Compiled Intermediate Code
 [; ;Main.C: 55: Initial();
 "55
 [e ( _Initial ..  ]
-[; ;Main.C: 56: while(1)
 "56
-[e :U 98 ]
-[; ;Main.C: 57: {
+[v _zx `Vuc ~T0 @X0 1 a ]
+[; ;Main.C: 56: volatile uint8_t zx = 0;
+[e = _zx -> -> 0 `i `uc ]
+[; ;Main.C: 57: Key_Task();
 "57
-{
-[; ;Main.C: 58: Task_Process();
+[e ( _Key_Task ..  ]
+[; ;Main.C: 58: while(1)
 "58
-[e ( _Task_Process ..  ]
+[e :U 98 ]
+[; ;Main.C: 59: {
 "59
+{
+[; ;Main.C: 61: Task_Process();
+"61
+[e ( _Task_Process ..  ]
+"62
 }
 [e :U 97 ]
-"56
+"58
 [e $U 98  ]
 [e :U 99 ]
-[; ;Main.C: 59: }
-[; ;Main.C: 60: }
-"60
+[; ;Main.C: 62: }
+[; ;Main.C: 63: }
+"63
 [e :UE 96 ]
 }

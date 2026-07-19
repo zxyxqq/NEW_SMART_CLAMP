@@ -1278,7 +1278,7 @@ void Ready_Init(void);
 void Ready_Control(uint8_t on);
 void READY_Task(void);
 
-# 7 "RC.h"
+# 12 "RC.h"
 void RC_Init(void);
 void RC_Read(void);
 void RC_Task(void);
@@ -1353,7 +1353,7 @@ Register_State RES_Change;
 
 extern sys SYS;
 
-# 8 "int.h"
+# 16 "int.h"
 void INT_Init(void);
 void INT_Read(void);
 void INT_Task(void);
@@ -1361,16 +1361,20 @@ void INT_Task(void);
 # 11 "INT.C"
 void INT_Init(void)
 {
-TRISA |= 0B00010000;
+PORTA &= ~(1 << 4);
+
+TRISA |= (1 << 4);
+
+
 }
 
-# 21
+# 25
 void INT_Read(void)
 {
-SYS.INT_Value = PA4;
+SYS.INT_Value = (1 << 4);
 }
 
-# 31
+# 35
 void INT_Task(void)
 {
 INT_Read();

@@ -12,12 +12,13 @@ void Initial(void)
 {
 	DelayMs(20);//上电延迟
 	POWER_INITIAL();
+    Timer0_Init();
     RC_Init();
     INT_Init();
     SBY_Init();
 	Ready_Init();
     REGISTER_Init();
-    
+    Hummer_Init();
     
     T0IE = 1;				//开定时器/计数器0中断
     

@@ -53,8 +53,11 @@ void interrupt ISR(void)
 void main(void)
 {
 	Initial();
+    volatile uint8_t zx = 0;
+	Key_Task();
 	while(1)
     {
+    
 		Task_Process();
     }
 }

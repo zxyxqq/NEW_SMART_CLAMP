@@ -269,20 +269,12 @@ Version 3.2   GCC8 Compiled Intermediate Code
 [v _Task_2 `(v ~T0 @X0 0 ef ]
 "35
 [v _Task_3 `(v ~T0 @X0 0 ef ]
-"9 RC.h
-[v _RC_Task `(v ~T0 @X0 0 ef ]
-"10 Int.h
-[v _INT_Task `(v ~T0 @X0 0 ef ]
-"16 BUZZ.h
-[v _BUZZTT_Task `(v ~T0 @X0 0 ef ]
-"18 SBY.h
-[v _SBY_Task `(v ~T0 @X0 0 ef ]
-"33 ready.h
-[v _READY_Task `(v ~T0 @X0 0 ef ]
-"7 Timer.h
-[v _Timer0_Task `(v ~T0 @X0 0 ef ]
 "20 REGISTER.h
 [v _REGISTER_Task `(v ~T0 @X0 0 ef ]
+"17 SBY.h
+[v _RC_STANDBY_Close `(v ~T0 @X0 0 ef ]
+"32 ready.h
+[v _Ready_Control `(v ~T0 @X0 0 ef1`uc ]
 [; ;__size_t.h: 4: typedef unsigned size_t;
 [; ;stdarg.h: 7: typedef void * va_list[1];
 [; ;stdarg.h: 10: extern void * __va_start(void);
@@ -1947,12 +1939,12 @@ Version 3.2   GCC8 Compiled Intermediate Code
 [; ;ready.h: 31: void Ready_Init(void);
 [; ;ready.h: 32: void Ready_Control(uint8_t on);
 [; ;ready.h: 33: void READY_Task(void);
-[; ;Int.h: 8: void INT_Init(void);
-[; ;Int.h: 9: void INT_Read(void);
-[; ;Int.h: 10: void INT_Task(void);
-[; ;RC.h: 7: void RC_Init(void);
-[; ;RC.h: 8: void RC_Read(void);
-[; ;RC.h: 9: void RC_Task(void);
+[; ;Int.h: 16: void INT_Init(void);
+[; ;Int.h: 17: void INT_Read(void);
+[; ;Int.h: 18: void INT_Task(void);
+[; ;RC.h: 12: void RC_Init(void);
+[; ;RC.h: 13: void RC_Read(void);
+[; ;RC.h: 14: void RC_Task(void);
 [; ;BUZZ.h: 11: void KEY_Init(void);
 [; ;BUZZ.h: 12: void Hummer_Init(void);
 [; ;BUZZ.h: 13: void BUZZHH_Control(void);
@@ -2057,122 +2049,110 @@ Version 3.2   GCC8 Compiled Intermediate Code
 [; ;TASK.C: 9: { 0,3,20,Task_2 },
 [; ;TASK.C: 10: { 0,4,500,Task_3 },
 [; ;TASK.C: 11: };
-"18
-[v _Task_0 `(v ~T0 @X0 1 ef ]
 "19
+[v _Task_0 `(v ~T0 @X0 1 ef ]
+"20
 {
-[; ;TASK.C: 18: void Task_0(void)
-[; ;TASK.C: 19: {
+[; ;TASK.C: 19: void Task_0(void)
+[; ;TASK.C: 20: {
 [e :U _Task_0 ]
 [f ]
-[; ;TASK.C: 20: RC_Task();
-"20
-[e ( _RC_Task ..  ]
-[; ;TASK.C: 21: INT_Task();
-"21
-[e ( _INT_Task ..  ]
-[; ;TASK.C: 22: BUZZTT_Task();
-"22
-[e ( _BUZZTT_Task ..  ]
-[; ;TASK.C: 23: SBY_Task();
-"23
-[e ( _SBY_Task ..  ]
-[; ;TASK.C: 24: READY_Task();
-"24
-[e ( _READY_Task ..  ]
-[; ;TASK.C: 25: Timer0_Task();
-"25
-[e ( _Timer0_Task ..  ]
-[; ;TASK.C: 26: REGISTER_Task();
-"26
+[; ;TASK.C: 28: REGISTER_Task();
+"28
 [e ( _REGISTER_Task ..  ]
-[; ;TASK.C: 27: }
-"27
+[; ;TASK.C: 42: RC_STANDBY_Close();
+"42
+[e ( _RC_STANDBY_Close ..  ]
+[; ;TASK.C: 43: Ready_Control(0);
+"43
+[e ( _Ready_Control (1 -> -> 0 `i `uc ]
+[; ;TASK.C: 44: }
+"44
 [e :UE 89 ]
 }
-"35
+"52
 [v _Task_1 `(v ~T0 @X0 1 ef ]
-"36
+"53
 {
-[; ;TASK.C: 35: void Task_1(void)
-[; ;TASK.C: 36: {
+[; ;TASK.C: 52: void Task_1(void)
+[; ;TASK.C: 53: {
 [e :U _Task_1 ]
 [f ]
-[; ;TASK.C: 38: }
-"38
+[; ;TASK.C: 54: }
+"54
 [e :UE 90 ]
 }
-"45
+"61
 [v _Task_2 `(v ~T0 @X0 1 ef ]
-"46
+"62
 {
-[; ;TASK.C: 45: void Task_2(void)
-[; ;TASK.C: 46: {
+[; ;TASK.C: 61: void Task_2(void)
+[; ;TASK.C: 62: {
 [e :U _Task_2 ]
 [f ]
-[; ;TASK.C: 48: }
-"48
+[; ;TASK.C: 64: }
+"64
 [e :UE 91 ]
 }
-"54
+"70
 [v _Task_3 `(v ~T0 @X0 1 ef ]
-"55
+"71
 {
-[; ;TASK.C: 54: void Task_3(void)
-[; ;TASK.C: 55: {
+[; ;TASK.C: 70: void Task_3(void)
+[; ;TASK.C: 71: {
 [e :U _Task_3 ]
 [f ]
-[; ;TASK.C: 57: }
-"57
+[; ;TASK.C: 103: }
+"103
 [e :UE 92 ]
 }
-"65
+"111
 [v _Task_Process `(v ~T0 @X0 1 ef ]
-"66
+"112
 {
-[; ;TASK.C: 65: void Task_Process(void)
-[; ;TASK.C: 66: {
+[; ;TASK.C: 111: void Task_Process(void)
+[; ;TASK.C: 112: {
 [e :U _Task_Process ]
 [f ]
-"67
+"113
 [v _i `uc ~T0 @X0 1 a ]
-[; ;TASK.C: 67: unsigned char i;
-[; ;TASK.C: 68: for(i = 0;i<TASK_MAX;i++)
-"68
+[; ;TASK.C: 113: unsigned char i;
+[; ;TASK.C: 114: for(i = 0;i<TASK_MAX;i++)
+"114
 {
 [e = _i -> -> 0 `i `uc ]
 [e $ < -> _i `i -> . `E1318 4 `i 94  ]
 [e $U 95  ]
-"69
+"115
 [e :U 94 ]
-[; ;TASK.C: 69: {
+[; ;TASK.C: 115: {
 {
-[; ;TASK.C: 70: if(TaskCompany[i].Run == 1)
-"70
+[; ;TASK.C: 116: if(TaskCompany[i].Run == 1)
+"116
 [e $ ! == -> . *U + &U _TaskCompany * -> _i `ux -> -> # *U &U _TaskCompany `ui `ux 0 `i -> 1 `i 97  ]
-[; ;TASK.C: 71: {
-"71
+[; ;TASK.C: 117: {
+"117
 {
-[; ;TASK.C: 72: TaskCompany[i].Run = 0;
-"72
+[; ;TASK.C: 118: TaskCompany[i].Run = 0;
+"118
 [e = . *U + &U _TaskCompany * -> _i `ux -> -> # *U &U _TaskCompany `ui `ux 0 -> -> 0 `i `uc ]
-[; ;TASK.C: 73: TaskCompany[i].TaskHook();
-"73
+[; ;TASK.C: 119: TaskCompany[i].TaskHook();
+"119
 [e ( *U . *U + &U _TaskCompany * -> _i `ux -> -> # *U &U _TaskCompany `ui `ux 3 ..  ]
-"74
+"120
 }
 [e :U 97 ]
-"75
+"121
 }
-"68
+"114
 [e ++ _i -> -> 1 `i `uc ]
 [e $ < -> _i `i -> . `E1318 4 `i 94  ]
 [e :U 95 ]
-"75
+"121
 }
-[; ;TASK.C: 74: }
-[; ;TASK.C: 75: }
-[; ;TASK.C: 76: }
-"76
+[; ;TASK.C: 120: }
+[; ;TASK.C: 121: }
+[; ;TASK.C: 122: }
+"122
 [e :UE 93 ]
 }

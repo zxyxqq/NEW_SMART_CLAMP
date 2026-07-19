@@ -22,7 +22,10 @@ void KEY_Init(void)
  --------------------------------------------------*/	
  void Hummer_Init(void)
  {
+	PORTA |=  0B00000100;
 	TRISA &= ~0B00000100;
+    
+    WPUA &= ~0B00000100;
  }
  
  /*-------------------------------------------------
@@ -55,7 +58,7 @@ void Key_Detect(void)
     static uint16_t long_cnt  = 0;		// 长按计时
     static uint8_t  long_trig = 0;      // 新增：长按已触发标志 (0=未触发, 1=已触发)
 
-	if(PA2 == 0)//按键按下
+	if(!PA2)//按键按下
 	{
 		// 1. 消抖
 		if(press_cnt <4)//执行4次,总计20ms
@@ -105,8 +108,13 @@ void Key_Detect(void)
 
 void Key_Task(void)
 {
+	TRISA &= ~0B00000100;
+	PA2 = 1;
+    
 	KEY_Init();
     Key_Detect();
+	TRISA &= ~0B00000100;
+    PA2 = 1;
 }
 /*-------------------------------------------------
  *  函数名Hummer_Task

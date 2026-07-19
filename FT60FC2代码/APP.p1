@@ -266,9 +266,11 @@ Version 3.2   GCC8 Compiled Intermediate Code
 [v _DelayMs `(v ~T0 @X0 0 ef1`uc ]
 "6 POWER.h
 [v _POWER_INITIAL `(v ~T0 @X0 0 ef ]
-"7 RC.h
+"6 Timer.h
+[v _Timer0_Init `(v ~T0 @X0 0 ef ]
+"12 RC.h
 [v _RC_Init `(v ~T0 @X0 0 ef ]
-"8 Int.h
+"16 Int.h
 [v _INT_Init `(v ~T0 @X0 0 ef ]
 "14 SBY.h
 [v _SBY_Init `(v ~T0 @X0 0 ef ]
@@ -276,6 +278,8 @@ Version 3.2   GCC8 Compiled Intermediate Code
 [v _Ready_Init `(v ~T0 @X0 0 ef ]
 "15 REGISTER.h
 [v _REGISTER_Init `(v ~T0 @X0 0 ef ]
+"12 BUZZ.h
+[v _Hummer_Init `(v ~T0 @X0 0 ef ]
 [; ;fmd.h: 26: extern const char __xc8_OPTIM_SPEED;
 [; ;fmd.h: 28: extern double __fpnormalize(double);
 [; ;gcc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -1960,12 +1964,12 @@ Version 3.2   GCC8 Compiled Intermediate Code
 [; ;ready.h: 31: void Ready_Init(void);
 [; ;ready.h: 32: void Ready_Control(uint8_t on);
 [; ;ready.h: 33: void READY_Task(void);
-[; ;Int.h: 8: void INT_Init(void);
-[; ;Int.h: 9: void INT_Read(void);
-[; ;Int.h: 10: void INT_Task(void);
-[; ;RC.h: 7: void RC_Init(void);
-[; ;RC.h: 8: void RC_Read(void);
-[; ;RC.h: 9: void RC_Task(void);
+[; ;Int.h: 16: void INT_Init(void);
+[; ;Int.h: 17: void INT_Read(void);
+[; ;Int.h: 18: void INT_Task(void);
+[; ;RC.h: 12: void RC_Init(void);
+[; ;RC.h: 13: void RC_Read(void);
+[; ;RC.h: 14: void RC_Task(void);
 [; ;BUZZ.h: 11: void KEY_Init(void);
 [; ;BUZZ.h: 12: void Hummer_Init(void);
 [; ;BUZZ.h: 13: void BUZZHH_Control(void);
@@ -2026,28 +2030,34 @@ Version 3.2   GCC8 Compiled Intermediate Code
 [; ;APP.C: 14: POWER_INITIAL();
 "14
 [e ( _POWER_INITIAL ..  ]
-[; ;APP.C: 15: RC_Init();
+[; ;APP.C: 15: Timer0_Init();
 "15
-[e ( _RC_Init ..  ]
-[; ;APP.C: 16: INT_Init();
+[e ( _Timer0_Init ..  ]
+[; ;APP.C: 16: RC_Init();
 "16
-[e ( _INT_Init ..  ]
-[; ;APP.C: 17: SBY_Init();
+[e ( _RC_Init ..  ]
+[; ;APP.C: 17: INT_Init();
 "17
-[e ( _SBY_Init ..  ]
-[; ;APP.C: 18: Ready_Init();
+[e ( _INT_Init ..  ]
+[; ;APP.C: 18: SBY_Init();
 "18
-[e ( _Ready_Init ..  ]
-[; ;APP.C: 19: REGISTER_Init();
+[e ( _SBY_Init ..  ]
+[; ;APP.C: 19: Ready_Init();
 "19
+[e ( _Ready_Init ..  ]
+[; ;APP.C: 20: REGISTER_Init();
+"20
 [e ( _REGISTER_Init ..  ]
-[; ;APP.C: 22: T0IE = 1;
-"22
+[; ;APP.C: 21: Hummer_Init();
+"21
+[e ( _Hummer_Init ..  ]
+[; ;APP.C: 23: T0IE = 1;
+"23
 [e = _T0IE -> -> 1 `i `b ]
-[; ;APP.C: 24: GIE = 1;
-"24
-[e = _GIE -> -> 1 `i `b ]
-[; ;APP.C: 25: }
+[; ;APP.C: 25: GIE = 1;
 "25
+[e = _GIE -> -> 1 `i `b ]
+[; ;APP.C: 26: }
+"26
 [e :UE 89 ]
 }

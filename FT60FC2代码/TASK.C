@@ -15,15 +15,32 @@ TaskComps TaskCompany[TASK_MAX] =
 * ²ÎÊý£ºÎÞ
 * ÃèÊö£ºÆ½¾ù5msÖ´ÐÐÒ»´Î
 **************************************************************************************************/
+
 void Task_0(void)
 {
-	RC_Task();
-	INT_Task();
-    BUZZTT_Task();
-	SBY_Task();
-    READY_Task();
-    Timer0_Task();
+//	RC_Task();
+//	INT_Task();
+//    BUZZTT_Task();
+//	SBY_Task();
+//    READY_Task();
+//    Timer0_Task();
+//TRISA = 0B00000001;
 	REGISTER_Task();
+
+/*°´¼ü·äÃùÆ÷²âÊÔ*/
+//if(!SYS.Key_Press_Value)
+//{
+//	Key_Task();
+//}
+//else
+//{
+//	Hummer_Task();
+//}
+/*°´¼ü·äÃùÆ÷²âÊÔ*/
+
+//STANDBY_Open();
+RC_STANDBY_Close();
+Ready_Control(0);
 }
 
 
@@ -34,7 +51,6 @@ void Task_0(void)
 **************************************************************************************************/
 void Task_1(void)
 {
-
 }
 
 /**************************************************************************************************
@@ -53,6 +69,36 @@ void Task_2(void)
 **************************************************************************************************/
 void Task_3(void)
 {	
+//¼ì²â·äÃùÆ÷
+/*
+Hummer_Task();
+
+*/
+//¼ì²â·äÃùÆ÷
+
+//¼ì²âSTANDBY,RC,READYµÆ
+//	static uint16_t i =0;
+//	i++;
+//	if(i<4)
+//	{
+////		RC_Open();
+//	}
+//	else if(i<8)
+//	{
+//		Ready_Control(1);
+////		STANDBY_Open();
+//	}
+//	else if(i<12)
+//	{
+//		Ready_Control(0);
+////	RC_STANDBY_Close();
+//	}
+//	else
+//	{
+//		i = 0;
+//	}
+
+//¼ì²âSTANDBY,RC,READYµÆ
 
 }
 

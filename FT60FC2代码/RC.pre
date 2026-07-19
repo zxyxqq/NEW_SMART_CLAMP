@@ -1278,7 +1278,7 @@ void Ready_Init(void);
 void Ready_Control(uint8_t on);
 void READY_Task(void);
 
-# 8 "Int.h"
+# 16 "Int.h"
 void INT_Init(void);
 void INT_Read(void);
 void INT_Task(void);
@@ -1353,24 +1353,26 @@ Register_State RES_Change;
 
 extern sys SYS;
 
-# 7 "RC.h"
+# 12 "RC.h"
 void RC_Init(void);
 void RC_Read(void);
 void RC_Task(void);
 
-# 9 "RC.C"
+# 11 "RC.C"
 void RC_Init(void)
 {
-TRISA |= 0B00100000;
+TRISA |= (1 << 5);
 }
 
-# 19
+# 21
 void RC_Read(void)
 {
-SYS.RC_Value = PA5;
+
+
+SYS.RC_Value = (1 << 5);
 }
 
-# 29
+# 33
 void RC_Task(void)
 {
 RC_Read();

@@ -1,7 +1,7 @@
 #include "int.h"
 
 
-
+//static uint8_t last_int = 0;
 /*-------------------------------------------------
  *  函数名INT_Init
  *	功能：  INT初始化
@@ -10,7 +10,11 @@
  --------------------------------------------------*/	
 void INT_Init(void)
 {
-	TRISA |= 0B00010000;
+	INT_PORT &= ~INT_PIN_MASK;
+    
+	INT_TRIS |= INT_PIN_MASK;
+    
+//    last_int = 0;
 }
 /*-------------------------------------------------
  *  函数名INT_Read
@@ -20,7 +24,7 @@ void INT_Init(void)
  --------------------------------------------------*/	
 void INT_Read(void)
 {
-	SYS.INT_Value = PA4;
+	SYS.INT_Value = INT_PIN_MASK;
 }
 /*-------------------------------------------------
  *  函数名INT_Task

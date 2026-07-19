@@ -1,7 +1,7 @@
 #include "RC.h"
 
 // 静态变量：缓存上次读取的值，用于检测变化（可选）
-static uint8_t last_value = 0xFF;   // 初始化为无效值
+//static uint8_t last_value = 0xFF;   // 初始化为无效值
 /*-------------------------------------------------
  *  函数名RC_Init
  *	功能：  rc初始化
@@ -22,7 +22,7 @@ void RC_Read(void)
 {
     /*增加消抖*/
     
-	SYS.RC_Value = PA5;
+	SYS.RC_Value = RC_PIN_MASK;
 }
 /*-------------------------------------------------
  *  函数名RC_Task

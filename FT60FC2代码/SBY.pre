@@ -1278,12 +1278,12 @@ void Ready_Init(void);
 void Ready_Control(uint8_t on);
 void READY_Task(void);
 
-# 8 "Int.h"
+# 16 "Int.h"
 void INT_Init(void);
 void INT_Read(void);
 void INT_Task(void);
 
-# 7 "RC.h"
+# 12 "RC.h"
 void RC_Init(void);
 void RC_Read(void);
 void RC_Task(void);
@@ -1365,10 +1365,10 @@ static SBY_State current_output_state = RC_ST_led_Close;
 void SBY_Init(void)
 {
 
-TRISA &= ~(1 << 2);
+PORTA &= ~(1 << 1);
 
 
-TRISA |= (1 << 2);
+TRISA |= (1 << 1);
 
 
 current_output_state = RC_ST_led_Close;
@@ -1378,22 +1378,22 @@ current_output_state = RC_ST_led_Close;
 void RC_Open(void)
 {
 
-TRISA &= ~(1 << 2);
-TRISA &= ~(1 << 2);
+PORTA &= ~(1 << 1);
+TRISA &= ~(1 << 1);
 
 }
 
 # 45
 void STANDBY_Open(void)
 {
-TRISA |= (1 << 2);
-TRISA &= ~(1 << 2);
+PORTA |= (1 << 1);
+TRISA &= ~(1 << 1);
 }
 
 # 57
 void RC_STANDBY_Close(void)
 {
-TRISA |= (1 << 2);
+TRISA |= (1 << 1);
 }
 
 # 67
@@ -1447,6 +1447,7 @@ current_output_state = target;
 # 125
 void SBY_Task(void)
 {
-SBY_Detect();
-SBY_Control();
+
+
+
 }

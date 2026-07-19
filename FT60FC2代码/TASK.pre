@@ -1251,12 +1251,12 @@ void Ready_Init(void);
 void Ready_Control(uint8_t on);
 void READY_Task(void);
 
-# 8 "Int.h"
+# 16 "Int.h"
 void INT_Init(void);
 void INT_Read(void);
 void INT_Task(void);
 
-# 7 "RC.h"
+# 12 "RC.h"
 void RC_Init(void);
 void RC_Read(void);
 void RC_Task(void);
@@ -1367,37 +1367,37 @@ TaskComps TaskCompany[TASK_MAX] =
 { 0,4,500,Task_3 },
 };
 
-# 18
+# 19
 void Task_0(void)
 {
-RC_Task();
-INT_Task();
-BUZZTT_Task();
-SBY_Task();
-READY_Task();
-Timer0_Task();
+
+# 28
 REGISTER_Task();
+
+# 42
+RC_STANDBY_Close();
+Ready_Control(0);
 }
 
-# 35
+# 52
 void Task_1(void)
 {
-
 }
 
-# 45
+# 61
 void Task_2(void)
 {
 
 }
 
-# 54
+# 70
 void Task_3(void)
 {
 
+# 103
 }
 
-# 65
+# 111
 void Task_Process(void)
 {
 unsigned char i;

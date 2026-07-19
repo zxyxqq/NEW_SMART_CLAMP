@@ -124,6 +124,7 @@ void SBY_Control(void)
 
 void SBY_Task(void)
 {
-	SBY_Detect();
-	SBY_Control();
+//	SBY_Detect();
+//	SBY_Control();
+
 }

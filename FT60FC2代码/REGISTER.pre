@@ -1278,12 +1278,12 @@ void Ready_Init(void);
 void Ready_Control(uint8_t on);
 void READY_Task(void);
 
-# 8 "Int.h"
+# 16 "Int.h"
 void INT_Init(void);
 void INT_Read(void);
 void INT_Task(void);
 
-# 7 "RC.h"
+# 12 "RC.h"
 void RC_Init(void);
 void RC_Read(void);
 void RC_Task(void);
@@ -1365,7 +1365,7 @@ static Register_State last_state = High_Register;
 void REGISTER_Init(void)
 {
 
-TRISA &= ~(1 << 0);
+PORTA &= ~(1 << 0);
 
 TRISA |= (1 << 0);
 
@@ -1381,7 +1381,7 @@ TRISA |= (1 << 0);
 # 44
 void Regiser_Low(void)
 {
-TRISA &= ~(1 << 0);
+PORTA &= ~(1 << 0);
 TRISA &= ~(1 << 0);
 }
 
@@ -1418,6 +1418,8 @@ last_state = target;
 # 94
 void REGISTER_Task(void)
 {
-REGISTER_Detect();
+
+
+SYS.RES_Change = High_Register;
 REGISTER_Control();
 }

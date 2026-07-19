@@ -1949,12 +1949,12 @@ Version 3.2   GCC8 Compiled Intermediate Code
 [; ;ready.h: 31: void Ready_Init(void);
 [; ;ready.h: 32: void Ready_Control(uint8_t on);
 [; ;ready.h: 33: void READY_Task(void);
-[; ;Int.h: 8: void INT_Init(void);
-[; ;Int.h: 9: void INT_Read(void);
-[; ;Int.h: 10: void INT_Task(void);
-[; ;RC.h: 7: void RC_Init(void);
-[; ;RC.h: 8: void RC_Read(void);
-[; ;RC.h: 9: void RC_Task(void);
+[; ;Int.h: 16: void INT_Init(void);
+[; ;Int.h: 17: void INT_Read(void);
+[; ;Int.h: 18: void INT_Task(void);
+[; ;RC.h: 12: void RC_Init(void);
+[; ;RC.h: 13: void RC_Read(void);
+[; ;RC.h: 14: void RC_Task(void);
 [; ;BUZZ.h: 11: void KEY_Init(void);
 [; ;BUZZ.h: 12: void Hummer_Init(void);
 [; ;BUZZ.h: 13: void BUZZHH_Control(void);
@@ -2012,9 +2012,9 @@ Version 3.2   GCC8 Compiled Intermediate Code
 [; ;REGISTER.C: 18: {
 [e :U _REGISTER_Init ]
 [f ]
-[; ;REGISTER.C: 20: TRISA &= ~(1 << 0);
+[; ;REGISTER.C: 20: PORTA &= ~(1 << 0);
 "20
-[e =& _TRISA -> ~ << -> 1 `i -> 0 `i `uc ]
+[e =& _PORTA -> ~ << -> 1 `i -> 0 `i `uc ]
 [; ;REGISTER.C: 22: TRISA |= (1 << 0);
 "22
 [e =| _TRISA -> << -> 1 `i -> 0 `i `uc ]
@@ -2048,9 +2048,9 @@ Version 3.2   GCC8 Compiled Intermediate Code
 [; ;REGISTER.C: 45: {
 [e :U _Regiser_Low ]
 [f ]
-[; ;REGISTER.C: 46: TRISA &= ~(1 << 0);
+[; ;REGISTER.C: 46: PORTA &= ~(1 << 0);
 "46
-[e =& _TRISA -> ~ << -> 1 `i -> 0 `i `uc ]
+[e =& _PORTA -> ~ << -> 1 `i -> 0 `i `uc ]
 [; ;REGISTER.C: 47: TRISA &= ~(1 << 0);
 "47
 [e =& _TRISA -> ~ << -> 1 `i -> 0 `i `uc ]
@@ -2155,13 +2155,13 @@ Version 3.2   GCC8 Compiled Intermediate Code
 [; ;REGISTER.C: 95: {
 [e :U _REGISTER_Task ]
 [f ]
-[; ;REGISTER.C: 96: REGISTER_Detect();
-"96
-[e ( _REGISTER_Detect ..  ]
-[; ;REGISTER.C: 97: REGISTER_Control();
-"97
-[e ( _REGISTER_Control ..  ]
-[; ;REGISTER.C: 98: }
+[; ;REGISTER.C: 98: SYS.RES_Change = High_Register;
 "98
+[e = . _SYS 9 . `E1307 0 ]
+[; ;REGISTER.C: 99: REGISTER_Control();
+"99
+[e ( _REGISTER_Control ..  ]
+[; ;REGISTER.C: 100: }
+"100
 [e :UE 101 ]
 }

@@ -5,7 +5,7 @@
 #include "app.h"
 
 /*宏定义*/
-#define LED_PIN_MASK    (1 << 2)   // PA2 对应 bit2
+#define LED_PIN_MASK    (1 << 1)   // PA2 对应 bit2
 #define LED_TRIS	TRISA	
 #define LED_PORT	PORTA	
 

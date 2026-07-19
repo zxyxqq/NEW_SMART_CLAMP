@@ -1278,12 +1278,12 @@ void Ready_Init(void);
 void Ready_Control(uint8_t on);
 void READY_Task(void);
 
-# 8 "Int.h"
+# 16 "Int.h"
 void INT_Init(void);
 void INT_Read(void);
 void INT_Task(void);
 
-# 7 "RC.h"
+# 12 "RC.h"
 void RC_Init(void);
 void RC_Read(void);
 void RC_Task(void);
@@ -1369,10 +1369,13 @@ WPUA |= 0B00000100;
 # 23
 void Hummer_Init(void)
 {
+PORTA |= 0B00000100;
 TRISA &= ~0B00000100;
+
+WPUA &= ~0B00000100;
 }
 
-# 34
+# 37
 void BUZZHH_Control(void)
 {
 if(SYS.RC_Value||SYS.INT_Value)
@@ -1385,14 +1388,14 @@ Hummer_Task();
 
 }
 
-# 52
+# 55
 void Key_Detect(void)
 {
 static uint8_t press_cnt = 0;
 static uint16_t long_cnt = 0;
 static uint8_t long_trig = 0;
 
-if(PA2 == 0)
+if(!PA2)
 {
 
 if(press_cnt <4)
@@ -1434,21 +1437,26 @@ long_trig = 0;
 }
 }
 
-# 106
+# 109
 void Key_Task(void)
 {
+TRISA &= ~0B00000100;
+PA2 = 1;
+
 KEY_Init();
 Key_Detect();
+TRISA &= ~0B00000100;
+PA2 = 1;
 }
 
-# 118
+# 126
 void Hummer_Task(void)
 {
 Hummer_Init();
 PA2 = 0;
 }
 
-# 130
+# 138
 void BUZZTT_Task(void)
 {
 BUZZHH_Control();
